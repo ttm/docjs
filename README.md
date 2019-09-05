@@ -47,5 +47,30 @@ https://sphinx-js-howto.readthedocs.io/en/latest/
 https://github.com/slatedocs/slate
 (tem p js e vimL)
 
+### for vue
+https://github.com/Kocal/jsdoc-vuejs
+
+#### vuese 
+https://dev.to/berniwittmann/quick--easy-documentation-generation-for-vuejs-components-7k6
+
+need to install tslint:
+    $ yarn global add tslint typescript
+
+then 
+1. clone repo: https://github.com/vue-contrib/vuese
+2. cd vuese
+3. yarn install
+4. yarn run build
+5. yarn link
+
+In the project you want to make de documentation files:
+1. If @vuese/cli is not yet installed, add it: yarn add @vuese/cli
+2. Run yarn link vuese-monorepo
+3. Navigate to node_modules/.bin and open vuese.cmd and vuese
+4. Change any instance of @vuese to vuese-monorepo\packages in both files
+5. Run node_modules/.bin/vuese gen
+
+
+
 #### único que vi fazendo tudo com simples //
 http://ashkenas.com/docco/
